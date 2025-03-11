@@ -1,4 +1,10 @@
 import "./topbar.css";
+import {
+	MdOutlineSearch,
+	MdPerson,
+	MdChatBubble,
+	MdNotifications,
+} from "react-icons/md";
 
 export default function Topbar() {
 	return (
@@ -8,7 +14,7 @@ export default function Topbar() {
 			</div>
 			<div className="topbarCenter">
 				<div className="searchbar">
-					{/* Search icon */}
+					<MdOutlineSearch className="searchIcon" />
 					<input
 						placeholder="Search for friends, posts, or video"
 						className="searchInput"
@@ -21,8 +27,24 @@ export default function Topbar() {
 					<span className="topbarLink">Timeline</span>
 				</div>
 				<div className="topbarIcons">
-					<div className="topbarIconItem">{/* Person Icon Here */}</div>
+					<div className="topbarIconItem">
+						<MdPerson />
+						<span className="topbarIconBadge">1</span>
+					</div>
+					<div className="topbarIconItem">
+						<MdChatBubble />
+						<span className="topbarIconBadge">2</span>
+					</div>
+					<div className="topbarIconItem">
+						<MdNotifications />
+						<span className="topbarIconBadge">1</span>
+					</div>
 				</div>
+				<img
+					src="/assets/person/person 1.jpeg"
+					alt=""
+					className="topbarImg"
+				/>
 			</div>
 		</div>
 	);
