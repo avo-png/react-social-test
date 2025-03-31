@@ -62,54 +62,6 @@ export default function Sidebar() {
 						/>
 						<span className="sidebarFriendName">Jane Doe</span>
 					</li>
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src="/assets/person/2.jpeg"
-							alt=""
-						/>
-						<span className="sidebarFriendName">Jane Doe</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src="/assets/person/2.jpeg"
-							alt=""
-						/>
-						<span className="sidebarFriendName">Jane Doe</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src="/assets/person/2.jpeg"
-							alt=""
-						/>
-						<span className="sidebarFriendName">Jane Doe</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src="/assets/person/2.jpeg"
-							alt=""
-						/>
-						<span className="sidebarFriendName">Jane Doe</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src="/assets/person/2.jpeg"
-							alt=""
-						/>
-						<span className="sidebarFriendName">Jane Doe</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src="/assets/person/2.jpeg"
-							alt=""
-						/>
-						<span className="sidebarFriendName">Jane Doe</span>
-					</li>
 				</ul>
 			</div>
 		</div>
