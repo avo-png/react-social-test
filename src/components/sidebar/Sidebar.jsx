@@ -1,13 +1,17 @@
 import "./sidebar.css";
-import { MdOutlineRssFeed } from "react-icons/md";
-import { MdChat } from "react-icons/md";
-import { MdOutlineVideoLibrary } from "react-icons/md";
-import { MdGroups } from "react-icons/md";
-import { MdBookmark } from "react-icons/md";
-import { MdQuestionMark } from "react-icons/md";
-import { MdWork } from "react-icons/md";
-import { MdEvent } from "react-icons/md";
-import { MdOutlineClass } from "react-icons/md";
+import {
+	MdOutlineClass,
+	MdEvent,
+	MdWork,
+	MdQuestionMark,
+	MdBookmark,
+	MdGroups,
+	MdOutlineRssFeed,
+	MdChat,
+	MdOutlineVideoLibrary,
+} from "react-icons/md";
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriends/CloseFriends";
 
 export default function Sidebar() {
 	return (
@@ -54,14 +58,12 @@ export default function Sidebar() {
 				<button className="sidebarButton">Show More</button>
 				<hr className="sidebarHr" />
 				<ul className="sidebarFriendList">
-					<li className="sidebarFriend">
-						<img
-							className="sidebarFriendImg"
-							src="/assets/person/2.jpeg"
-							alt=""
+					{Users.map((u) => (
+						<CloseFriend
+							key={u.id}
+							user={u}
 						/>
-						<span className="sidebarFriendName">Jane Doe</span>
-					</li>
+					))}
 				</ul>
 			</div>
 		</div>
